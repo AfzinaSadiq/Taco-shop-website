@@ -12,7 +12,12 @@ This is a simple HTML & CSS project for a fictional restaurant called **Little T
 
 ##  Project Structure
 
-<pre> ```text little-taco-shop/ ├── index.html ├── contact.html ├── hours.html ├── style.css └── images/ ``` </pre>
+little-taco-shop/
+|---index.html
+|---contact.html
+|---hours.html
+|---style.css
+|---images/
 
 
 ##  Built With
