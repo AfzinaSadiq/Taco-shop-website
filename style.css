@@ -1,0 +1,88 @@
+/* Make images scale on smaller screens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make tables scrollable on small screens */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Responsive text inside tables */
+th, td {
+  word-wrap: break-word;
+}
+
+/* Make the nav menu flexible */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: burlywood;
+  border-radius: 5px;
+  color: #333;
+}
+
+html {
+    font-size: 22px;
+    background-color: lightgoldenrodyellow;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+th, td, caption {
+    border: 1px solid #333;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: separate;
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 18px; /* Slightly smaller text */
+  }
+
+  body {
+    padding: 0.5rem;
+    border: none; /* Remove borders on small devices */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  figure {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
